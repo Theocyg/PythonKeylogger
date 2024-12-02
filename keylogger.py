@@ -56,8 +56,6 @@ def on_press(key):
         text = text[:-1]
     elif key == keyboard.Key.ctrl_l or key == keyboard.Key.ctrl_r:
         pass
-    elif key == keyboard.Key.esc:
-        return False
     else:
         char = str(key).strip("'")
         if char in azerty_mapping:
